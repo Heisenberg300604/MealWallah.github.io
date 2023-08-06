@@ -1,0 +1,216 @@
+/*CSS reset*/
+* {
+    padding: 0 px;
+    margin: 0px;
+}
+
+/*Navigation Bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-family: 'Zilla Slab', serif;
+    font-size: 22px;
+}
+
+/*logo and image */
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 55px;
+    width: 55px;
+    border-radius: 150px;
+}
+
+/* Navbar list styling */
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    /* NOTE : we gave here padding because to enable the hovering effect that we will put  */
+    padding: 10px 12px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/*Home Section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 120px;
+    align-items: center;
+    justify-content: center;
+    height: 660px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../images/bg5.avif') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+/* Services section*/
+#services{
+    margin: 35px;
+    display: flex;
+}
+#services .box{
+    border: 4px solid rgb(11, 19, 24);
+    margin: 5px 10px;
+    border-radius: 25px;
+    background-color: rgb(206, 206, 206);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 370px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#services .box img{
+    height: 150px;
+    width: 170px;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+    border-radius: 100px;
+}
+
+.services-container{
+    height: 524px;
+    background: url('../images/our\ services.jpg') no-repeat center center/cover;
+}
+
+/*Utility Classes*/
+.h-primary {
+    font-size: 50px;
+    padding: 20px;
+    font-family: 'Noto Serif Vithkuqi', serif;
+    font-weight:bold;
+}
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 20px;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.btn{
+    color: white;
+    background-color: blueviolet;
+    border: 2px solid beige;
+    margin: 30px 20px;
+    font-size: 2.0rem;
+    border-radius: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+/*clients section*/
+.client-section{
+    height: 344px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 140px;
+    padding: 7px;
+}
+
+#client-section::before{
+    content: "";
+    position:absolute;
+    background: url('../images/clientsbg.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#mcd{
+   height: 160px;
+}
+
+/*Contact Section*/
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../images/contact.jpg') no-repeat center center/cover;
+    height: 510px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+}
